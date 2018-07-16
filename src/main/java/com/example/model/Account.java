@@ -1,12 +1,15 @@
 package com.example.model;
 
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Controller;
 
-@Component
+@Controller
 public class Account {
 	long id;
+	
+	
 	public Account() {
 		super();
 		System.out.println("Account Object is Created");
 	}
+	
 }

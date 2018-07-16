@@ -8,7 +8,7 @@ import org.springframework.context.annotation.ComponentScan;
 import com.example.model.Account;
 
 @SpringBootApplication
-@ComponentScan(basePackages = {"com.example.demo", "come.example.model"})
+@ComponentScan(basePackages = {"com.example.demo","com.example.model"})
 public class SpringDiDemoApplication {
 
 	public static void main(String[] args) {
@@ -21,7 +21,9 @@ public class SpringDiDemoApplication {
 		emp.setName("Mike");
 		System.out.println("this employee nam is " + emp.getName());
 		
+		
 		Account account = cont.getBean(Account.class);
+		
 	
 	}
 }
